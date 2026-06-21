@@ -29,7 +29,12 @@ app = FastAPI(
 # ── Middleware (order matters — outermost runs first) ──────────────────────
 
 # 1. Sessions: stores user tokens server-side, sends session cookie to browser
-app.add_middleware(SessionMiddleware, secret_key=settings.secret_key)
+app.add_middleware(
+    SessionMiddleware,
+    secret_key=settings.secret_key,
+    same_site="none",   # required for cross-origin cookies (Vercel → Render)
+    https_only=True,    # SameSite=None requires Secure flag
+)
 
 # 2. CORS: allows the frontend (different port) to call our API
 app.add_middleware(
