@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Linear",
+    "domain": "linear.app",
+    "scenario": "well_known",
+    "notes": "Popular B2B SaaS — lots of public data, recent news, clear tech stack. Should score high on all dimensions.",
+    "expected_min_score": 7.0
+  },
+  {
+    "name": "Stripe",
+    "domain": "stripe.com",
+    "scenario": "large_company",
+    "notes": "Large company with lots of press coverage. Tests that agent handles information density well and doesn't hallucinate specific financials.",
+    "expected_min_score": 7.0
+  },
+  {
+    "name": "Freehand",
+    "domain": "freehand.ai",
+    "scenario": "smaller_company",
+    "notes": "Smaller / less-covered company. Tests graceful degradation — agent should still produce a useful brief with limited source material.",
+    "expected_min_score": 5.0
+  }
+]

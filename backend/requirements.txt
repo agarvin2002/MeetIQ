@@ -1,0 +1,39 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# Google Calendar + OAuth
+google-auth-oauthlib
+google-api-python-client
+
+# Research APIs
+tavily-python
+
+# LangGraph + LangChain (agent framework)
+langchain
+langchain-aws
+langgraph
+langsmith
+
+# Logging
+structlog
+
+# Config management
+pydantic-settings
+pydantic
+
+# Rate limiting
+slowapi
+
+# Session management
+starlette[sessions]
+itsdangerous
+
+# HTTP + Scraping
+httpx
+requests
+beautifulsoup4
+lxml
+
+# Utilities
+python-dotenv
