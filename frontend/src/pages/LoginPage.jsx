@@ -2,12 +2,12 @@ const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-surface-100 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-ground flex items-center justify-center p-6">
       <div className="w-full max-w-md animate-fade-in">
 
         {/* Logo + brand */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-500 shadow-lg mb-5">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent shadow-lg mb-5">
             <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                 d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -43,7 +43,7 @@ export default function LoginPage() {
           {/* CTA */}
           <a
             href={`${API}/auth/login`}
-            className="flex items-center justify-center gap-3 w-full py-3.5 px-5 rounded-xl bg-brand-500 hover:bg-brand-600 active:bg-brand-700 text-white font-semibold text-sm transition-all duration-150 shadow-sm hover:shadow-md"
+            className="flex items-center justify-center gap-3 w-full py-3.5 px-5 rounded-xl bg-accent hover:opacity-90 active:opacity-80 text-white font-semibold text-sm transition-all duration-150 shadow-sm hover:shadow-md"
           >
             <GoogleIcon />
             Sign in with Google
